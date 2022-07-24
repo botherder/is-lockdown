@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript" src="../is-lockdown.js"></script>
+</head>
+<body>
+<div>lockdown avaiable: <span id="lockdown_available"></span></div>
+<div>lockdown enabled: <span id="lockdown_enabled"></span></div>
+<div>webrtc: <span id="webrtc"></span></div>
+<div>webgl: <span id="webgl"></span></div>
+<div>mathml: <span id="mathml"></span></div>
+</body>
+<script>
+document.getElementById("lockdown_available").innerHTML = isLockdown.isLockdownAvailable();
+document.getElementById("lockdown_enabled").innerHTML = isLockdown.isLockdownAvailable();
+document.getElementById("webrtc").innerHTML = isLockdown.isWebRTCAvailable();
+document.getElementById("webgl").innerHTML = isLockdown.isWebGLAvailable();
+document.getElementById("mathml").innerHTML = isLockdown.isMathMLAvailable();
+</script>
+</html>
