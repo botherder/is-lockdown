@@ -16,7 +16,7 @@ Using is-lockdown is as simple as:
 
 ```javascript
 if (isLockdown.isLockdownEnabled()) {
-	// Here goes your code to adapt the website rendering.
-	// ...
+    // Here goes your code to adapt the website rendering.
+    // ...
 }
 ```
