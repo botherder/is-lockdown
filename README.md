@@ -1,6 +1,6 @@
 # is-lockdown
 
-is-lockdown is a small library to allow to tentatively detect whether a website viewer is running iOS with Lockdown Mode enabled (or at least available). The primary purpose of this library is to allow to dynamically adapt the styling of a webpage to facilitate browing for users with Lockdown Mode enabled, and therefore incentivize its use.
+is-lockdown is a small library to allow to tentatively detect whether a website viewer is running iOS with [Lockdown Mode](https://www.apple.com/newsroom/2022/07/apple-expands-commitment-to-protect-users-from-mercenary-spyware/) enabled (or at least available). The primary purpose of this library is to allow to dynamically adapt the styling of a webpage to facilitate browing for users with Lockdown Mode enabled, and therefore incentivize its use.
 
 ## Install
 
@@ -20,3 +20,11 @@ if (isLockdown.isLockdownEnabled()) {
     // ...
 }
 ```
+
+For example, a common issue is the unavailability of custom webfonts for Lockdown Mode users. For example, FontAwesome icons will not render correctly. An easy solution is to just hide all FontAwesome icons all together for Lockdown Mode users only:
+
+```javascript
+if (isLockdown.isLockdownEnabled()) {
+    $(".fa, .fab, .far, .fas").hide();
+}
+````
