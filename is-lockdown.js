@@ -56,18 +56,6 @@
             return false;
         }
 
-        // _lib.createWidget = function() {
-        //     let linkToLockdown = "https://www.apple.com/newsroom/2022/07/apple-expands-commitment-to-protect-users-from-mercenary-spyware/";
-        //     let topBarHeight = '2em';
-        //     let topBar = document.createElement('div');
-        //     topBar.setAttribute('id', 'isLockdownWidget');
-        //     topBar.style.cssText = 'position: absolute; top: 0; width: 100%; height: ' + topBarHeight + '; background-color: black; color: white; ';
-        //     topBar.innerHTML = "For better security <a style=\"color: white; text-decoration: underline;\" " +
-        //                        "href=\"" + linkToLockdown + "\">enable Lockdown Mode!</a>";
-        //     document.body.appendChild(topBar);
-        //     document.body.style.cssText += 'padding-top: ' + topBarHeight;
-        // }
-
         return _lib;
     }
 
